@@ -10,8 +10,8 @@ test = struct();
 for i =1:numel(names)
     NMDA = dataSet.(names{i}).NMDA;
     if NMDA == 0
-        test.(names{i})=dataSet.(names{i});
+        control.(names{i})=dataSet.(names{i});
     else
-        control.(names{i}) = dataSet.(names{i});
+        test.(names{i}) = dataSet.(names{i});
     end
 end
