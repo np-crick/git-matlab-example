@@ -8,14 +8,13 @@ mouseNames = fieldnames(dataSet);
 
 for m = 1:length(mouseNames)
     thisMouse = dataSet.(mouseNames{m});
-    if thisMouse.NMDA > 0;
-        test.(mouseNames{m})= thisMouse;
-        
+    
+    if thisMouse.NMDA > 0
+        test.(mouseNames{m}) = thisMouse;
     else
-        control.(mouseNames{m})= thisMouse;
+        control.(mouseNames{m}) = thisMouse;
     end
 end
 
-    
 end
 
