@@ -3,5 +3,6 @@ function [ parameters ] = getParameters( dataSet, task, parameter )
 %parameters for a given trial where each row is an individual animal and
 %each column is the chosen parameter on each trial
 
+
 end
 
