@@ -3,6 +3,8 @@ function [ parameters ] = getParameters( dataSet, task, parameter )
 %parameters for a given trial where each row is an individual animal and
 %each column is the chosen parameter on each trial
 
+<<<<<<< HEAD
+=======
 mouseNames = fieldnames(dataSet);
 
 allParameters = {};
@@ -21,6 +23,7 @@ parameters = nan(length(allParameters), maxLength);
 for i = 1:length(allParameters)
    parameters(i,1:length(allParameters{1,i})) = allParameters{1,i}; 
 end
+>>>>>>> upstream/master
 
 end
 
