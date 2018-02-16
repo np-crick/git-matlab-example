@@ -2,14 +2,18 @@ function [ control, test ] = splitData( dataSet )
 %SPLITDATA splits a standard AutonoMouse data set into two structures, one
 %for control animals, one for test animals based on NMDA parameter
 
-names=fieldnames(dataSet);
-test=struct();
-control=struct();
-for i=1:size(names,1)
-    if dataSet.(names{i}).NMDA==0
-        control.(names{i})=dataSet.(names{i});
+control = struct();
+test = struct();
+
+mouseNames = fieldnames(dataSet);
+
+for m = 1:length(mouseNames)
+    thisMouse = dataSet.(mouseNames{m});
+    
+    if thisMouse.NMDA > 0
+        test.(mouseNames{m}) = thisMouse;
     else
-        test.(names{i})=dataSet.(names{i});
+        control.(mouseNames{m}) = thisMouse;
     end
 end
 

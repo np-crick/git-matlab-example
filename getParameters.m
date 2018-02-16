@@ -13,5 +13,6 @@ parameters = nan(length(mouseparameters), maxLength);
 for j=size(mouseparameters,2)
     parameters(j,1:length(mouseparameters{1,j}))=mouseparameters{1,j};
 end
+
 end
 
