@@ -3,23 +3,15 @@ function [ parameters ] = getParameters( dataSet, task, parameter )
 %parameters for a given trial where each row is an individual animal and
 %each column is the chosen parameter on each trial
 
-mouseNames = fieldnames(dataSet);
+names = fieldnames(dataSet);
 
-allParameters = {};
-
-for m = 1:length(mouseNames)
-   thisMouse = dataSet.(mouseNames{m});
-   thisTask = thisMouse.(task);
-   thisParameter = thisTask.(parameter);
-   
-   allParameters{m} = thisParameter;
+for i=1:size(names,1)
+    mouseparameters{i}=dataSet.(names{i}).(task).(parameter);
 end
-
-maxLength = max(cellfun(@length, allParameters));
-parameters = nan(length(allParameters), maxLength);
-
-for i = 1:length(allParameters)
-   parameters(i,1:length(allParameters{1,i})) = allParameters{1,i}; 
+maxLength = max(cellfun(@length, mouseparameters));
+parameters = nan(length(mouseparameters), maxLength);
+for j=size(mouseparameters,2)
+    parameters(j,1:length(mouseparameters{1,j}))=mouseparameters{1,j};
 end
 
 end
