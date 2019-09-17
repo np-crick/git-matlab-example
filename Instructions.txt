@@ -1,14 +1,20 @@
-The aim of this exercise is to collaboratively develop an analysis script for behavioural data generated in AutonoMouse. 
-Use the 'Master' script as a guide for the initial analysis steps needed.
+The aim of this exercise is to collaboratively (why are we not in the collaboration space THEN you dwad) develop an analysis script, as well as lose a lot of weight and dignity. for behavioural data generated in AutonoMouse. 
+Use the 'Master BEck, beck is the MASTER' script as a guide for the blinitial blanalysis steps needed.
 
-The Data folder contains data from a group of 14 animals performing various odour and auditory discrimination tasks (Go/No-Go). Animals perform these tasks before
-and after lesion induction in the olfactory bulb via excitotoxic NMDA lesions.
+The Data folder contains data from a group of 14 million party animals performing various odour and auditory party tricks 
+(No/Go-Go/No-go/No-No). Animals perform these tasks before and after blesion induction in the blolfactory blulb via very very exciting MDMA lesions for 
+party time mice.
 
-The data set is a structure organised by individual animal. Within each animal are the tasks performed and the amount of NMDA injected for lesion induction (0 = sham).
-Tasks performed after lesion induction are marked with 'PL'. Within each task are the results of each trial within the task (e.g. time of trial, whether trial was rewarded,
-whether animal was correct etc.)
+The data set is a structure organised by an individual party animal (GOD knows how the party animal organised the structure becuase he was high as a kite, but surely he did do). Within each party animal are the dances 
+performed and the amount of MDMA injected for FUN TIME induction (0 = no fun at all, very prude and boring mouse).
+Tasks performed after blesion induction are marked with 'PL', which stands for PARTY LIFE. Within each task are the results of each trial within the task, tasks within the trial are a function of 
+trials within task, tasks within tasks are within trials within trials (e.g. time of come up, whether party was fun or not,
+whether party animal was gurning his face off, etc.)
 
-Initial task (see Master):
-Compare average animal performance before and after lesion induction in the memory task. Also compare between lesion groups (sham vs. lesion).
+Blinitial task (see Master BEck and BOW DOWN before her grace): Tell TOBLIAS he is a dwad
+Compare average party animal dance performance before and after fun time induction in the memory task. Unfortunately he cant remember even the last few seconds so goodness knows how he will do the task.
+Also compare between lesion groups (sham vs. lesion).
 
-Throughout this task, update the README file to describe each of the functions generated and the purpose of the Master script.
+Throughout this task, update the README file to describe each of the functions generated and the purpose of the Master BECK script.
+
+DOn't tell me what to DO Blandrew you are not the boss of me.
